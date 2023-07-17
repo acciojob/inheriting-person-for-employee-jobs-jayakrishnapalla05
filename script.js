@@ -8,7 +8,7 @@ Person.prototype.greet=function(){
 }
 
 function Employee(name, age, jobTitle) {
-	super(name,age);
+	Person.call(name,age);
 	this.jobTitle=jobTitle;
 }
 Employee.prototype.jobGreet=function(){
